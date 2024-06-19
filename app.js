@@ -6,7 +6,7 @@ let number01;
 let number02;
 
 number01 =new Number (document.getElementById("number01"));
-number02 =new Number (document.getElementById("number03"));
+number02 =new Number (document.getElementById("number02"));
 
 let op=document.getElementById("op");
 let lblOutput = document.getElementById("output");
