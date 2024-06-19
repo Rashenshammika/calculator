@@ -1,24 +1,23 @@
-
-function calc() {
-
-
-let number01;
-let number02;
-
-number01 =new Number (document.getElementById("number01"));
-number02 =new Number (document.getElementById("number02"));
-
-let op=document.getElementById("op");
-let lblOutput = document.getElementById("output");
-
-console.log(number01+number02);
-
-switch(op){
-    case "+": lblOutput.innerHTML=number01+number02;break;
-
-}
-
-console.log(typeof number01);
-console.log(typeof number01);
-
-}
+function calc(){
+    let num1=""; 
+   num1 = new Number(document.getElementById("number01"). value) ;
+   let num2="";
+   num2=  new Number(document.getElementById("number02").value);
+   let opretor= document.getElementById("oprator").value
+    let lblOutput= document.getElementById("Output");
+    
+     let result;
+   if (opretor=="+"){
+       result=num1 + num2;
+   }
+   if (opretor=="-"){
+     result=num1 - num2;
+ }
+ if (opretor=="*"){
+     result=num1 * num2;
+ }
+ if (opretor=="/"){
+     result=num1 / num2;
+ }
+     lblOutput.innerHTML=result;
+ }
